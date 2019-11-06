@@ -16,4 +16,4 @@ jobs:
         uses: julia-actions/setup-julia@v0.2
         with:
           version: ${{ matrix.julia-version }}
-      - run: julia --color=yes test/runtests.jl
+      - run: julia --project --color=yes test/runtests.jl
